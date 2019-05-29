@@ -77,7 +77,6 @@ class Trash extends PluginBase implements Listener {
 		]);
 	}
 	
-	//Reasons
 	public function sendNavigator(Player $player){
 		$nbt = new CompoundTag ("", [
 			new StringTag ("id", Tile::CHEST),
@@ -86,7 +85,6 @@ class Trash extends PluginBase implements Listener {
 			new IntTag("y", floor($player->y) - 2),
 			new IntTag("z", floor($player->z))
 		] );
-		/** @var Chest $tile */
 		$tile = Tile::createTile ("Chest", $player->getLevel(), $nbt);
 		$block = Block::get(Block::CHEST);
 		$block->x = (int) $tile->x;
