@@ -103,16 +103,10 @@ class Trash extends PluginBase implements Listener {
 			$glass->setCustomName(" ");
 			$exit = Item::get(355, 14, 1);
 			$exit->setCustomName(C::RESET . C::BOLD . C::RED . "Exit");
-			$inv->setItem(0, $glass);
-			$inv->setItem(1, $glass);
-			$inv->setItem(2, $glass);
-			$inv->setItem(3, $glass);
-			$inv->setItem(4, $glass);
-			$inv->setItem(5, $glass);
-			$inv->setItem(6, $glass);
-			$inv->setItem(7, $glass);
-			$inv->setItem(8, $glass);
-			$inv->setItem(9, $glass);
+			foreach(range(0,8) as $i){
+			$inv->setItem($i, $glass) ;
+			}
+ 
 			/*
 			If you want to create a plugin with a chest i have set this.
 			$inv->setItem(10, $glass);
