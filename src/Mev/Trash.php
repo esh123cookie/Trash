@@ -113,7 +113,7 @@ class Trash extends PluginBase implements Listener {
 			$inv->setItem(7, $glass);
 			$inv->setItem(8, $glass);
 			$inv->setItem(9, $glass);
-			/**
+			/*
 			If you want to create a plugin with a chest i have set this.
 			$inv->setItem(10, $glass);
 			$inv->setItem(11, $grass);
