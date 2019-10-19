@@ -5,4 +5,4 @@ author: Mev
 api: 3.0.0
 commands:
   trash:
-    description: Open a trash for drop your shit
+    description: §6Open a chest to drop your trash
